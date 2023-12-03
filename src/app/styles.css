@@ -1,0 +1,39 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), 0fr);
+    gap: 1px;
+}
+
+.tile-hand {
+    display: grid;
+    grid-template-columns: repeat(var(--tile-hand-size), 0fr);
+    gap: 1px;
+}
+  
+.square {
+    width: 20px; /* adjust size as needed */
+    height: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px; /* Slightly less than the square to fit inside */
+    height: 18px;
+    background-color: #f8f8f8; /* Light background for the tile */
+    color: #333; /* Color for the letter */
+    font-size: 12px; /* Smaller font size for the small tile */
+    border: 1px solid #ddd; /* Border to distinguish the tile */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 2px; /* Slightly rounded corners */
+    user-select: none; /* Prevents text selection */
+    cursor: pointer; /* Indicates interactivity */
+    margin: auto; /* Center the tile within the square */
+}
+  
+  
